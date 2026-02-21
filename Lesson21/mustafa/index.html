@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    <form novalidate id="checkoutForm"  method="post">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="email@example.com"
+          name="email"
+          aria-describedby="emailError"
+        />
+        <p id="emailError" class="input-error" aria-live="polite"></p>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone</label>
+        <input
+          id="phone"
+          type="tel"
+          placeholder="555 123 4567"
+          name="phoneNumber"
+          aria-describedby="phoneError"
+        />
+        <p id="phoneError" class="input-error"></p>
+      </div>
+      <div class="input-group">
+        <label for="firstname">First Name</label>
+        <input
+          id="firstname"
+          type="text"
+          placeholder="Sophia"
+          name="firstname"
+          aria-describedby="firstnameError"
+        />
+        <p id="firstnameError" class="input-error" aria-live="polite"></p>
+      </div>
+      <div class="input-group">
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" placeholder="Clark" name="lastname" aria-describedby="lastnameError" />
+        <p id="lastnameError" class="input-error" aria-live="polite"></p>
+      </div>
+
+      <div class="input-group">
+        <label for="cardnumber">Card Number</label>
+        <input
+          id="cardnumber"
+          type="text"
+          placeholder="1234 5678 9101 1121"
+          name="cardnumber"
+          aria-describedby="cardnumberError"
+        />
+        <p id="cardnumberError" class="input-error" aria-live="polite"></p>
+      </div>
+      <div class="input-group">
+        <label for="expDate">Expiration Date</label>
+        <input id="expDate" type="text" placeholder="MM/YY" name="expDate" aria-describedby="expDateError" />
+        <p id="expDateError" class="input-error" aria-live="polite"></p>
+      </div>
+      <div class="input-group">
+        <label for="cvv">CVV</label>
+        <input id="cvv" type="text" placeholder="123" name="cvv" aria-describedby="cvvError" />
+        <p id="cvvError" class="input-error" aria-live="polite"></p>
+      </div>
+      <button type="submit" class="btn-success">Place Order</button>
+    </form>
+    <div class="hidden" id="success">
+      <p>Thank you! Your order has been successfully completed.</p>
+    </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
