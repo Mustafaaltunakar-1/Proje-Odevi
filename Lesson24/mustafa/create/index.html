@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>New User Create</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css"> </head>
+<body>
+  <div class="container">
+    <h1>New User Add</h1>
+    <a href="../index.html" class="button">← Back to List</a>
+
+    <div class="card">
+      <form id="createUserForm">
+        <div style="margin-bottom: 15px;">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <button type="submit" class="button button--success">Save the User</button>
+      </form>
+    </div>
+
+    <div id="statusContainer" class="container hidden">
+      <p id="status"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script> </body>
+</html>
